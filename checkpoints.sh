@@ -4,7 +4,7 @@
 wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/resolve/main/svd.safetensors -P /models/checkpoints/
 wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/resolve/main/svd_image_decoder.safetensors -P /models/checkpoints/
 #wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/blob/main/svd.safetensors -P /models/checkpoints/
-wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/resolve/main/svd_xt_image_decoder.safetensors -P /models/checkpoints/
+wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/resolve/main/svd_xt.safetensors -P /models/checkpoints/
 wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/resolve/main/svd_xt_image_decoder.safetensors -P /models/checkpoints/
 
 # Checkpoints
