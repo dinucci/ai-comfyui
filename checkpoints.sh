@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # Video Diffusion
-wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/resolve/main/svd.safetensors /models/checkpoints
+wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/resolve/main/svd.safetensors -P /models/checkpoints/
+wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/resolve/main/svd_image_decoder.safetensors -P /models/checkpoints/
+#wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/blob/main/svd.safetensors -P /models/checkpoints/
+wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/resolve/main/svd_xt_image_decoder.safetensors -P /models/checkpoints/
+wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/resolve/main/svd_xt_image_decoder.safetensors -P /models/checkpoints/
 
 # Checkpoints
 
@@ -12,8 +16,6 @@ wget -c https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/
 wget -c https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors -P /models/checkpoints/
 wget -c https://huggingface.co/latent-consistency/lcm-sdxl/resolve/main/diffusion_pytorch_model.fp16.safetensors -P /models/checkpoints/
 #wget -c https://civitai.com/api/download/models/240840?type=Model&format=SafeTensor&size=full&fp=fp16 -O ./models/checkpoints/juggernautxlv7.safetensors
-wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/blob/main/svd.safetensors -P /models/checkpoints/
-wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/blob/main/svd_xt.safetensors -P /models/checkpoints/
 wget -c https://huggingface.co/ckpt/cardos-animated/resolve/main/cardosAnimated_v20.safetensors -P /models/checkpoints/
 
 
