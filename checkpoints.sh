@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Video Diffusion
-wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/resolve/main/svd.safetensors -P ./models/checkpoints/
-wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/resolve/main/svd_image_decoder.safetensors -P ./models/checkpoints/
+#wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/resolve/main/svd.safetensors -P ./models/checkpoints/
+#wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/resolve/main/svd_image_decoder.safetensors -P ./models/checkpoints/
 #wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/blob/main/svd.safetensors -P ./models/checkpoints/
 wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/resolve/main/svd_xt.safetensors -P ./models/checkpoints/
 wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/resolve/main/svd_xt_image_decoder.safetensors -P ./models/checkpoints/
@@ -12,8 +12,8 @@ wget -c https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/res
 ### SDXL
 ### I recommend these workflow examples: https://comfyanonymous.github.io/ComfyUI_examples/sdxl/
 
-wget -c https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors -P ./models/checkpoints/
-wget -c https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors -P ./models/checkpoints/
+#wget -c https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors -P ./models/checkpoints/
+#wget -c https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors -P ./models/checkpoints/
 wget -c https://huggingface.co/latent-consistency/lcm-sdxl/resolve/main/diffusion_pytorch_model.fp16.safetensors -O ./models/loras/lcm-sdxl_diffusion_pytorch_model-fp16.safetensors
 wget -c https://civitai.com/api/download/models/240840?type=Model&format=SafeTensor&size=full&fp=fp16 -O ./models/checkpoints/juggernautxlv7.safetensors
 wget -c https://huggingface.co/ckpt/cardos-animated/resolve/main/cardosAnimated_v20.safetensors -P ./models/checkpoints/
@@ -62,23 +62,23 @@ wget -c https://huggingface.co/hakurei/waifu-diffusion-v1-4/resolve/main/vae/kl-
 # Loras
 wget -c https://civitai.com/api/download/models/10350 -O ./models/loras/theovercomer8sContrastFix_sd21768.safetensors #theovercomer8sContrastFix SD2.x 768-v
 wget -c https://civitai.com/api/download/models/10638 -O ./models/loras/theovercomer8sContrastFix_sd15.safetensors #theovercomer8sContrastFix SD1.x
-wget -c https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_offset_example-lora_1.0.safetensors -P /models/loras/ #SDXL offset noise lora
+wget -c https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_offset_example-lora_1.0.safetensors -P ./models/loras/ #SDXL offset noise lora
 
 
 # T2I-Adapter
-wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_depth_sd14v1.pth -P /models/controlnet/
-wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_seg_sd14v1.pth -P /models/controlnet/
-wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_sketch_sd14v1.pth -P /models/controlnet/
-wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_keypose_sd14v1.pth -P /models/controlnet/
-wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_openpose_sd14v1.pth -P /models/controlnet/
-wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_color_sd14v1.pth -P /models/controlnet/
-wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_canny_sd14v1.pth -P /models/controlnet/
+wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_depth_sd14v1.pth -P ./models/controlnet/
+wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_seg_sd14v1.pth -P ./models/controlnet/
+wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_sketch_sd14v1.pth -P ./models/controlnet/
+wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_keypose_sd14v1.pth -P ./models/controlnet/
+wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_openpose_sd14v1.pth -P ./models/controlnet/
+wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_color_sd14v1.pth -P ./models/controlnet/
+wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_canny_sd14v1.pth -P ./models/controlnet/
 
 # T2I Styles Model
-wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_style_sd14v1.pth -P /models/style_models/
+wget -c https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_style_sd14v1.pth -P ./models/style_models/
 
 # CLIPVision model (needed for styles model)
-wget -c https://huggingface.co/openai/clip-vit-large-patch14/resolve/main/pytorch_model.bin -O /models/clip_vision/clip_vit14.bin
+wget -c https://huggingface.co/openai/clip-vit-large-patch14/resolve/main/pytorch_model.bin -O ./models/clip_vision/clip_vit14.bin
 
 
 # ControlNet
